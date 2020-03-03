@@ -140,7 +140,7 @@ def generate_hashes(peaks, fan_value=DEFAULT_FAN_VALUE):
     if PEAK_SORT:
         peaks.sort(key=itemgetter(1))
 
-    for i in range(len(peaks)):
+    for i in range(len(list(peaks))):
         for j in range(1, fan_value):
             if (i + j) < len(peaks):
                 
